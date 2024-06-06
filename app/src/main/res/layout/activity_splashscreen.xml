@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_constraintGuide_begin="100dp"
-    style="@style/groupStylebgsplash"
-    >
+    style="@style/groupStylebgsplash">
+
 
         <ImageView
             android:id="@+id/ivsplashScreen"
@@ -24,6 +24,7 @@
             android:id="@+id/tagline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_italic"
             android:text="@string/tagline"
             android:textAlignment="center"
             android:textColor="@color/gigas100"
@@ -33,6 +34,6 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ivsplashScreen"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.038" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">SkinEctive</string>
-    <string name="tagline">"Detect Early, Detect Better"</string>
+    <string name="tagline">\"Detect Early, Detect Better\"</string>
+    <string name="logo_skinective">SkinEctive</string>
+    <string name="welcome_to_skinective">Welcome to SkinEctive</string>
+    <string name="tagline_welcomescreen1">Early Detection of Skin Disease</string>
+    <string name="detect_early_signs_of_skin_disease_effortlessly">Detect early signs of skin disease effortlessly</string>
 </resources>
