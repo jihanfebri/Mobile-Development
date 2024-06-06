@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="groupStylebgsplash">
+        <item name="android:background">@drawable/rectangle_bg_splash</item>
+    </style>
+
+    <style name="groupStyleWelcome">
+        <item name="android:background">@drawable/rectangle_bg_welcome</item>
+    </style>
+
+
+</resources>

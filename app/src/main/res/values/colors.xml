@@ -2,4 +2,18 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gigas50">#EFF0FE</color>
+    <color name="gigas100">#e1e3fe</color>
+    <color name="gigas200">#c9cbfc</color>
+    <color name="gigas300">#a8a9f9</color>
+    <color name="gigas400">#8c85f4</color>
+    <color name="gigas500">#7a68ec</color>
+    <color name="gigas600">#6b4be0</color>
+    <color name="gigas700">#5c3dc5</color>
+    <color name="gigas800">#4b349f</color>
+    <color name="gigas900">#40317e</color>
+    <color name="gigas950">#261d49</color>
+    <color name="splashPurple">#6A4BE0</color>
+
+
 </resources>
