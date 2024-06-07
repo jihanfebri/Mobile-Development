@@ -9,5 +9,9 @@
         <item name="android:background">@drawable/rectangle_bg_welcome</item>
     </style>
 
+    <style name="groupStyleWelcomescr3">
+        <item name="android:background">@drawable/rectangle_bg_welcomescreen3</item>
+    </style>
+
 
 </resources>

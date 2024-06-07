@@ -5,4 +5,11 @@
     <string name="welcome_to_skinective">Welcome to SkinEctive</string>
     <string name="tagline_welcomescreen1">Early Detection of Skin Disease</string>
     <string name="detect_early_signs_of_skin_disease_effortlessly">Detect early signs of skin disease effortlessly</string>
+    <string name="empowering_skin_health">Empowering Skin Health</string>
+    <string name="welcomescr2_headline1">High-Resolution Image Analysis</string>
+    <string name="welcomescr_headline2">Personalized Health Insights</string>
+    <string name="welcomescr2_headline2">Personalized Health Insights</string>
+    <string name="welcomescr2_headline3">Comprehensive Skin Health Reports</string>
+    <string name="titlescreen3">Let’s get started!</string>
+    <string name="headlinescr3">Your journey to healthier skin starts here</string>
 </resources>

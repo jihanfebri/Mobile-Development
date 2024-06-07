@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/groupStyleWelcome"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    style="@style/groupStyleWelcome">
+    android:layout_height="match_parent">
 
 
     <ImageView
@@ -18,7 +18,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 
     <ImageView
@@ -46,13 +45,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="548dp"
         android:fontFamily="@font/interbold"
-        android:textColor="@color/gigas100"
         android:gravity="center"
         android:text="@string/logo_skinective"
+        android:textColor="@color/gigas100"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,18 +71,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395"
-        />
+        app:layout_constraintVertical_bias="0.395" />
 
     <TextView
         android:id="@+id/tv_skinective"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/nunitosans_10ptextrabold"
-        android:textSize="24sp"
         android:gravity="center"
         android:text="@string/welcome_to_skinective"
         android:textColor="@color/white"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -96,10 +95,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/nunitosans_10ptlightitalic"
-        android:textSize="14sp"
         android:gravity="center"
         android:text="@string/tagline_welcomescreen1"
         android:textColor="@color/gigas50"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -113,19 +112,16 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/nunitosans_10ptlightitalic"
-        android:textSize="14sp"
         android:gravity="center"
         android:text="@string/detect_early_signs_of_skin_disease_effortlessly"
         android:textColor="@color/gigas50"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_tagline_welcomescreen1"
         app:layout_constraintVertical_bias="0.237" />
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,6 +17,8 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         renderscriptTargetApi = 19
         renderscriptSupportModeEnabled = true
+        renderscriptTargetApi = 19
+        renderscriptSupportModeEnabled = true
     }
 
     buildTypes {
@@ -36,7 +38,7 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures{
-        dataBinding = true
+        viewBinding = true
     }
 }
 
