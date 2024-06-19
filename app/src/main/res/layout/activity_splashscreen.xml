@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_constraintGuide_begin="100dp"
-    style="@style/groupStylebgsplash">
-
+    style="@style/groupStylebgsplash"
+    tools:context=".ui.SplashScreenActivity">
 
         <ImageView
             android:id="@+id/ivsplashScreen"

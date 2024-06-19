@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.skinective"
-        minSdk = 21
+        minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -52,5 +52,20 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.androidx.annotation)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.camera.view)
+    implementation(libs.circleimageview)
+    implementation(libs.androidx.core.splashscreen)
+    implementation (libs.androidx.viewpager2)
+    implementation (libs.retrofit)
+    implementation (libs.retrofit2.converter.gson)
+    implementation (libs.logging.interceptor)
+    implementation (libs.gson)
+    implementation(libs.kotlinx.coroutines.android)
+
+    implementation (libs.androidx.navigation.fragment.ktx)
+    implementation (libs.androidx.navigation.ui.ktx)
 
 }
