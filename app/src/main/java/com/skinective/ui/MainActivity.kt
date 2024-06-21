@@ -3,37 +3,53 @@ package com.skinective.ui
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.skinective.R
+import com.skinective.databinding.ActivityMainBinding
 import com.skinective.utils.Constants
-
-import com.skinective.utils.Constants.Companion.KEY_IS_LOGGED_IN
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         installSplashScreen()
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setupBottomNav()
+        binding.btnScan.setOnClickListener {
+            startActivity(Intent(this, DetectActivity::class.java))
+        }
 
         sharedPreferences = getSharedPreferences(Constants.SHARED_PREF_NAME, MODE_PRIVATE)
 
-        Handler(Looper.getMainLooper()).postDelayed({
-            val isLoggedIn = sharedPreferences.getBoolean(KEY_IS_LOGGED_IN, false)
+        // TODO uncomment this
+//        Handler(Looper.getMainLooper()).postDelayed({
+//            val isLoggedIn = sharedPreferences.getBoolean(KEY_IS_LOGGED_IN, false)
+//
+//            val intent = if (isLoggedIn) {
+//                Intent(this, LoginActivity::class.java) // Jika sudah login, arahkan ke LoginActivity
+//            } else {
+//                Intent(this, SignUpActivity::class.java) // Jika belum login, arahkan ke SignUpActivity
+//            }
+//
+//            startActivity(intent)
+//            finish()
+//        }, 600)
+    }
 
-            val intent = if (isLoggedIn) {
-                Intent(this, LoginActivity::class.java) // Jika sudah login, arahkan ke LoginActivity
-            } else {
-                Intent(this, SignUpActivity::class.java) // Jika belum login, arahkan ke SignUpActivity
-            }
+    private fun setupBottomNav() {
+        val navView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
 
-            startActivity(intent)
-            finish()
-        }, 600)
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navController = navHostFragment.navController
+        navView.setupWithNavController(navController)
     }
 }
