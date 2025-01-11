@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gigas50">#EFF0FE</color>
+    <color name="gigas100">#e1e3fe</color>
+    <color name="gigas200">#c9cbfc</color>
+    <color name="gigas300">#a8a9f9</color>
+    <color name="gigas400">#8c85f4</color>
+    <color name="gigas500">#7a68ec</color>
+    <color name="gigas600">#6b4be0</color>
+    <color name="gigas700">#5c3dc5</color>
+    <color name="gigas800">#4b349f</color>
+    <color name="gigas900">#40317e</color>
+    <color name="gigas950">#261d49</color>
+    <color name="gigas980">#261C4A</color>
+    <color name="splashPurple">#6A4BE0</color>
+
+    <color name="gray_dark">#263338</color>
+    <color name="gray_darker">#212126</color>
+    <color name="gray_light1">#858585</color>
+    <color name="purple_light">#8c85f5</color>
+    <color name="purple_dark">#403080</color>
+    <color name="purple_lighter">#9c8aeb</color>
+    <color name="gray_light2">#6b6b6b</color>
+    <color name="blue_light">#a8abfa</color>
+    <color name="blue_lighter">#c9ccfc</color>
+    <color name="blue_dark">#66e8fa</color>
+    <color name="blue_darker">#5c3dc7</color>
+    <color name="gray_lightest1">#dbdbf0</color>
+    <color name="white_light">#e0e3ff</color>
+    <color name="gray_medium">#949494</color>
+    <color name="purple_lightest">#a391ed</color>
+    <color name="white_lightest">#edfcff</color>
+    <color name="purple_darkest">#261c4a</color>
+    <color name="purple_lightest2">#b8a6ff</color>
+    <color name="gray_lighter">#a3a3a3</color>
+    <color name="purple_medium1">#7866ed</color>
+    <color name="gray_darkest">#cccccc</color>
+    <color name="blue_lightest">#7a7a7a</color>
+    <color name="blue_lightest2">#a6f2fc</color>
+    <color name="blue_darkest">#21d6ed</color>
+    <color name="gray_lighterest">#d1d1d1</color>
+    <color name="white_darkest">#cffaff</color>
+    <color name="purple_medium2">#473099</color>
+    <color name="gray">#6E6E6E</color>
+
+
+</resources>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="24dp"
+                    android:src="@drawable/ic_profile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_welcome_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="@string/welcome_text"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/your_history"
+                    android:textColor="#261C4A"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_learn_more_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/learn_more"
+                    android:textSize="11sp"
+                    android:textColor="@color/gigas400"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/item_circle_purple"
+                        android:padding="30dp">
+
+                        <TextView
+                            android:id="@+id/tv_detected_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="0"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/gigas900"
+                            android:textSize="36sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.811" />
+
+                        <TextView
+                            android:id="@+id/tv_detected_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="@string/detected"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toTopOf="@id/tv_detected_number"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="124dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/gradient_background"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_last_detected"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/last_detected"
+                            android:textColor="@color/gigas200"
+                            android:fontFamily="@font/poppins_mediumitalic"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toTopOf="@id/tv_last_detected_disease"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_last_detected_disease"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="Acne"
+                            android:textColor="@color/gigas50"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_last_detected" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_detect"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="60dp"
+                android:layout_margin="24dp"
+                android:text="@string/detect_now"
+                android:fontFamily="@font/interbold"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                tools:listitem="@layout/result_item"
+                android:visibility="gone"
+                tools:itemCount="1"
+                android:id="@+id/rv_three_last_detect"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/health_articles"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#261C4A"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_view_more_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_more"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/gigas400" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- First article -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_item1"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/id_img_scan"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                app:srcCompat="@drawable/img_sample_news"
+                                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialComponents.CornerSizeMedium"
+                                android:scaleType="centerCrop" />
+
+                            <TextView
+                                android:id="@+id/tv_article_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/news_title"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:paddingTop="8dp" />
+
+                            <TextView
+                                android:id="@+id/tv_article_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/news_desc"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:paddingTop="4dp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Second article -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_item2"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/id_img_scan2"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                app:srcCompat="@drawable/img_sample_news"
+                                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialComponents.CornerSizeMedium"
+                                android:scaleType="centerCrop" />
+
+                            <TextView
+                                android:id="@+id/tv_article_title2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/news_title"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:paddingTop="8dp" />
+
+                            <TextView
+                                android:id="@+id/tv_article_description2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/news_desc"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textSize="12sp"
+                                android:paddingTop="4dp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Third article -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_item3"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/id_img_scan3"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                app:srcCompat="@drawable/img_sample_news"
+                                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialComponents.CornerSizeMedium"
+                                android:scaleType="centerCrop" />
+
+                            <TextView
+                                android:id="@+id/tv_article_title3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/news_title"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:paddingTop="8dp" />
+
+                            <TextView
+                                android:id="@+id/tv_article_description3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/news_desc"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textSize="12sp"
+                                android:paddingTop="4dp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

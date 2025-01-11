@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="groupStylebgsplash">
+        <item name="android:background">@drawable/rectangle_bg_splash</item>
+    </style>
+
+    <style name="groupStyleWelcome">
+        <item name="android:background">@drawable/rectangle_bg_welcome</item>
+    </style>
+
+    <style name="groupStyleWelcomescr3">
+        <item name="android:background">@drawable/rectangle_bg_welcomescreen3</item>
+    </style>
+
+    <style name="Theme.App" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/gigas500</item>
+        <item name="colorPrimaryDark">@color/gigas700</item>
+        <item name="colorAccent">@color/splashPurple</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+        <item name="android:background">#f0f0ff</item>
+    </style>
+
+
+
+</resources>
